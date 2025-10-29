@@ -19,4 +19,4 @@ clean-targets:
 models:
   Urban_Mobility_Demo_Luminates_2025:
     +materialized: view
-    +schema: dbt_dev
+    +schema: "{{ target.schema }}"
